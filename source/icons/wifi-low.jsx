@@ -1,0 +1,15 @@
+import * as React from "react";
+
+const url = 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAFiVAABYlQHZbTfTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL7SURBVHgB7d2BbdNAFAbgCxN0hJQF6Aa0XYAV2IAVsgGwAMzAAm1ZgMICTdgAFujjTK5tVKrGcS6OHb5PerJaKXbk/O/Odq5qSgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwOpPEzkTE6o+bnuv7F08mPqZdcWYrWwl9c26Pcp3kelVqWiqtbO/8yrVY2f4o9b387u+ONUNdzmYlJfh3oX+X63Wu01THVa4vpRbN4TQCg9AEP9ck11muy9i9y3KsyaNLLOhXz8F/qhGONQG9i4dR/33s3yzMBvQlluFvRt7LGI7rMBt04k5qAyVgx7ku0r9PcfZtkes819wNcnsvEpsYavgb07R8b8eJ1gwVLZXR/zotn+sP2VWuM7NAO2aAFkr4Z2n44W+c5pq5H2jHMNFCDtM0b+ZpXF7mWWBs77l3ZoA1Vkb/KrtrWTV8MgusZwZYo8Lo36RwkZbLGO7X9uTRefHEcZpqllK8SculFM3P23xGx4+PAxvJwfwQ3dzmakbh09RRfu1Jrs9lX13MEmyjfMm0qfk2wX/iPZyUfW7qOvEs9wDrdX3y8zMqXIOXffxO3YzhqRVDFt3NY8vlCfGw7GIeHSWeZQZY7yp1M03lm9kuOYw6yy5cAq2hAdb7mrqbpg5NUCn8jY8JtpHDeJTrJrYzj5aXQ1Hhsqe4SVBDDtM0emiCqBj+WH6vAHXEjpsghJ+hix01QQg/YxGVmyCEn7GJuk0g/HtkMVxHJXDb/gXWomynqbtmod65RW/0LurMBEZ+xmuPTSD8DMMemkD4GZYem0D4GaYemkD4GbYdNoHwMw47aALhZ1wqNoHwM04VmkD4GbctmkD4OQwdmkD4OSwbNIHwc5hWmuBW+Plv5ZC/zfWtNEJTF7H8V0dHCQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4MD8Ae1hHhIIjKjtAAAAAElFTkSuQmCC)';
+const style = {
+	maskSize: 'contain',
+	WebkitMaskSize: 'contain',
+	maskImage: url,
+	WebkitMaskImage: url
+};
+
+export default function WifiLowIcon(props) {
+	return <svg width={24} height={24} viewBox="0 0 24 24" style={style} {...props}>
+		<rect x={0} y={0} width={24} height={24} fill="currentColor" stroke="none" />
+	</svg>
+};

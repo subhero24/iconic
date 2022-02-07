@@ -1,0 +1,15 @@
+import * as React from "react";
+
+const url = 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAFiVAABYlQHZbTfTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQ2SURBVHgB7d3vbRxFGAfg9xAFOB1cQgExoYBYoYAgKICEEmggCQWAO8BUEKcB/jSQIw1wrgC7ApZ3dIsAoQjfXZSd3fd5pNF+sb/szG9mdnduJgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAChnGIazLOdZtsPfNlm+z7IOWKJs3CdZvhv+X/ubk4ClGBv/Zri9jRCwGMPtev7/jAQBc5cNeT0c7izgCB/E9J7H4T4LOEIPAbgfh3sccIRVTKzNY+IIqxRwoB5GAJhMDwG4isP9GnCEHgLwKg4nAMzbsFv6cKh1wNwNu7U/+zoPWILBUgiqG0Nwm5HgXONnsYbd0oiL4d8jwnZs+GcBAAAAAAAAAAAAAABAabPYVGr8IUzbBvFhlnUWvwjr003sdup4k+VytVr9HJ3rOgDZ8J/k5VnsGj3zs83yIoPwQ3SqywAMu+1OXmY5DZagBeFRBuEqOtPd1ojZ+L/MyyY0/iW5m+V11m13u3l3NQKMN+hlsFRtI+SnPU2JugnAOO1pPb8H3GW7zvKgl+lQTwFo88R1UMEmA/AgOtDFM8D4tmcdVHE6PutNrosRQO9f0jZHgXsxsclHgPEj1zqoZt3DTn89TIEcdFdTm31Mfsbb3A/JY94eRnU5DF4P+7mwO3Rfsj7+uanxPn6Pic3xlMi7PX5Sr26sxjtZ9mnUQ9blpLOQ2QXAsaj9yqpsdfPHPv8ydQAck0ppAkBpAkBpAkBpAkBpAkBpAkBpAkBpAkBpAkBpAkBpAkBpAkBpAkBpAkBpAkBpAkBpAkBpAkBpAkBpAkBpAkBpAkBpAkBpAkBpAkBpH8bMjNvvcaTVarXvnqyLNLsAxH57T/IW++9JvEymQJQmAJQmAJQmAJQmAJQmAJQmAJQmAJQmAJQmAJQ2x6UQvuG/G9ZUxQwDMPW5srzdAecET05jojQBoDQBoDQBoDQBoDQBoDQBoDQBoDQBoDQBoDQBoDQBoDQBoDQBoDQBoDQBoDQBoDQBoDQBoDQBoDQBoDQBoDQBoDQBoDQBoDQBoLTZBcDxnrxLcxwB7ghBf8Y6WcfM9LA57k2Wkz3+/tss3+QNvwp60urwWeznJiY2+RbZ2ZA3eTkNKvpptVo9ign1MAX6JajqTUyshwBcBhW1h4bJ676LU0JyGrSNGT5AcZRtTn/uxcR6eQv0Iqik9f7PowPdnBOVo8DrvHwcVPBb9v4fRQd6+g7weZbrYOlaHX8anegmANkjXOXl63AK5JK1un061nUXuvoSnDfmIowES9XqtDX+V9GRLs+KzeeBdV5+jN2bIefZzlvr9dvHzi966vn/0uVaoHajxldkX2Vpr0hNi+an1VmruydZl5/02PibWfSuOSKc5eVxlvuxWzaxz9oh3p+2tucqdl/3L7PR+8oPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADEn604CmNqMukDAAAAAElFTkSuQmCC)';
+const style = {
+	maskSize: 'contain',
+	WebkitMaskSize: 'contain',
+	maskImage: url,
+	WebkitMaskImage: url
+};
+
+export default function DropdownIcon(props) {
+	return <svg width={24} height={24} viewBox="0 0 24 24" style={style} {...props}>
+		<rect x={0} y={0} width={24} height={24} fill="currentColor" stroke="none" />
+	</svg>
+};

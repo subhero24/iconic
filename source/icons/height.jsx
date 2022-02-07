@@ -1,0 +1,15 @@
+import * as React from "react";
+
+const url = 'url(data:image/png;base64,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)';
+const style = {
+	maskSize: 'contain',
+	WebkitMaskSize: 'contain',
+	maskImage: url,
+	WebkitMaskImage: url
+};
+
+export default function HeightIcon(props) {
+	return <svg width={24} height={24} viewBox="0 0 24 24" style={style} {...props}>
+		<rect x={0} y={0} width={24} height={24} fill="currentColor" stroke="none" />
+	</svg>
+};

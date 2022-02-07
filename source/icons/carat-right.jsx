@@ -1,0 +1,15 @@
+import * as React from "react";
+
+const url = 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAFiVAABYlQHZbTfTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARKSURBVHgB7d3hcRtFFAfwJ4YCQgeig0ADJKkgQwOECgg0ENMATgcODZAOcGggoYLIFRAqyOMOSZOMZyz76fZOJ/n3m9nJh/jWX3at/727t4oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADuncx80I0X3bjMT95144eAU9Yt8mU3Vnmz/v+WAafolsW/9cGnASenW9TPsuZFwKnY5Pyq/pplwLHL/a268SjgmOVwIhHHK9u4SJHoKC3inutXb7Rx1Y3Hi8XiKjgaXwStLLvR3xw/DzgWOY7z4CiIQO0i0HVXIRLNngg0nmU3Lrv99TRgrnIaSqUzJQKNF4Gue9ONH0WiebEBptsAvatwXzAr7gGmtezGSiRiNvJwzrvxIOCQsu5ltrNKr1BwSFm0ueZ5rhtkWtBow+Fk0WfX3dZGWeW+gOll0bVr+03wKtvRaMO0suiGOc6ynfep0YapZNGOeR5lu0j0MUUippBFt8zVR6J9eoxvcpEiEWPKojvO2ToSLQPGkEWFefvjVlqVSv9JjTaMIYuKc7culf4W0FIWRVGuzxxt+fRYJKKdLIo9Zfv7Ao02DJdFMUC2jURKpQyXRTHQZhNcZjt/pkjEvrIoGkmlUuYgi6KhbrqnKRJxSFkUjeUIpdLUaMNdZVGMJJVKOYQsihFl20abVfok4DZZFCPLtpHoLNjJqRAzszky5XE3fo/hvgvYJYtiQtmgVBrs5BNg3j4Eo/oymJ1c37xedGPo+z5/BzvZADPTLf6H3T+vY32K3FAvA3bJohhRN/1P2bAMGnCbLIoR5Lpn4DzbWaUHYdxFFkVj2b6R/lV6AMZdZVE00k/VjcfZLvL0L8PpG6Ymi2KgzcJfZPvXoR8GVGVRDLBZ/F9l+4YYkYf9ZFHsabP4v8m27/+fBQyRRVGUnyLP82ynPyfoUcBQWVScext5LrKdt6nESStZVJi3H19n28jja5VoK4vuOGcfeZ6loxGZuyy6Za7t4m/5VFeJk/Fk0Y55tpHnMtvoI88fKfIwpiy6YY7tU91VtuGpLtPIomvXjlHi9BVJTCeLPrtuW+J8ne045pBpZdHmmjGe6p4HTC3rtpGnZYnzWcAhZF3rEucyOJhF3HP9Kozp9b+zP/fn58Vi8W9wMJrip9cv/l+6ha9hfQZsgGn1jerfd4vfcSUz4WCs6Vx241uLf15sgPH1kefXbuE/kffnRwQaV3+0YR953gSz5BNgPO9iHXneBLNlA7TXR56+wvNkc9Q5zFe2pXGF45LtaFzh+ORwGlc4XjmMxhWOW+5P4wrHL/fr4dW4ciKUQSP+Kvzs/yXOzVPdq4Bjl+svp3h/h7/6Glc4Tbn+kop+E3zMm/P+MuCU5fo0t7ebjfBxk/XPUokTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4Af8Bj9Xc0wFxZlIAAAAASUVORK5CYII=)';
+const style = {
+	maskSize: 'contain',
+	WebkitMaskSize: 'contain',
+	maskImage: url,
+	WebkitMaskImage: url
+};
+
+export default function CaratRightIcon(props) {
+	return <svg width={24} height={24} viewBox="0 0 24 24" style={style} {...props}>
+		<rect x={0} y={0} width={24} height={24} fill="currentColor" stroke="none" />
+	</svg>
+};

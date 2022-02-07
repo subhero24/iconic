@@ -1,0 +1,15 @@
+import * as React from "react";
+
+const url = 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAFiVAABYlQHZbTfTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAR/SURBVHgB7dyBbRNJFAbgMboCoAPTAdfAna4SQgN3dEA6IFcJHZDQAKEByHVwVJDHrOwIgkg8s+tN1n7fJ42E5Nl/gzN/4sxYLgUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKBTRDyt400d5/HdZR0vCxyzusjXdVzF3YbH1gWOTcPiVwKO0/Zlz2W0G+Y+LXAM6mJ+F/3eFTh0dSG/jfHeFjhUsdntmepNgUOzp8WvBByeumBfxv45J2D56kJ9EfN5UWCpYrPX/3/MZ8heF9J4Ug7EdmGe1zHn/v2Qfa4ELEq0n/Luy5USsAjRf8q7L06LeXwx7pR3X5wW83hi2invvjgt5uHFfg+6pnJQxsOJZS3+G0rA/GKeU959cVp8ZFZlQWJzEntZlu331Wr1qXAUFlOA2Oy7D4t/6VuPX8umBP8VDt4iToJj+inv19JvzDUDp8VHZClvhRgW/7qM91fpN+aaG+uyKYGDsgP36AWoi+ikTFv8r8a8Jt9e86qMt67jdYEpYtrbHE5/yOnyw3WnMd55gSlivNMpOT9dO7oEBaaIcc6m5vzi+rMYocAUcfsjDFu8uyNn8sKN/jfeLf3Mgh2WsAv0oWPu1D9cd3m1vUerswJTxOb9/lcNP22HOet7crrck9P8EYsF9iH28KG20Wnurwe61UV1Ere3Rc9js0Oz88Ap9liAfXw9HIZFvRluitZFfaMehB3N/53xDuZTIWAOCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqCkBqvxWaRMTNP1e7pq5Wu6bIXwq/ARpsv7nP6jit430d13eMj3Wc1PmrHxaE/Nv5L3vzaRCdOrOf13HVEX+1vebo84c5I/K/RMfXT4Po1JFbOr+5N67qeHrA+V8a81dz5s/NS6DdTupYl37rOl43zDspy8x/vis/Nj9HTubKfwgKsNs/Zbw/G+YsOf+PHY8Pf83+XebLn91y/hyfKKLvBeWqcSuiN7f3PgvPH3ZsntyTPdz7usyU/xD8BiC1YyrARcfcy465F2W8lvtclPHmzv/UMOeijNeSP6tjKsCHjrn/dsztyR1znyXnn+14PCbkR0M+rYYtte3W2s7tt5lyR91nwfmfG7KH8WyufDrVJ3W9/WZc3/GkD4+tS6eG3En3WWD+59b8+H4Q1pp/3ZPPCPXJHY7zP26f7GG8r+M0Jh68/CL35zHpPgvJfzMmf1uE2fIBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIDD9Q3TXEAX6OVq8AAAAABJRU5ErkJggg==)';
+const style = {
+	maskSize: 'contain',
+	WebkitMaskSize: 'contain',
+	maskImage: url,
+	WebkitMaskImage: url
+};
+
+export default function YAxisIcon(props) {
+	return <svg width={24} height={24} viewBox="0 0 24 24" style={style} {...props}>
+		<rect x={0} y={0} width={24} height={24} fill="currentColor" stroke="none" />
+	</svg>
+};

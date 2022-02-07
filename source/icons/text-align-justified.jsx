@@ -1,0 +1,15 @@
+import * as React from "react";
+
+const url = 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAFiVAABYlQHZbTfTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALgSURBVHgB7d3hbRQ7EADg2VcBr4OD18ATBYQAjYQGSFqgA64EKAQuDUAqIFdCOljG2UsDoGhG5++TRpufp7VnPbYjTQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPCnlmhiXdcX+bjOuDwF5+dnxn5Zli/RRIsEyMm/y8f3jF0wg/uMd5kIxyjWJQHGC9kFMxlj/jqT4CEK/RPFcvJfhck/o5cZN1GsPAFiq/uZ00UUKy+BcgVYg1mtWQKVfoQ7rABQpkMCHIJZ3UWxDglwG8xolL77KNZhDzAuwMYFyS6YyX3W/6+iWPkKcDoHfptxDGbxeBEWDbTYBI8bwYxxLvwhGtSFPJtDxqfYLsCOAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMCZKG+U/eTUMPs64/IUnJ/REH2/LMuXaKJFAuTk3+Xje+gWP4vHRtkdegV3SYDxQnbBTMaYj4bZD1GovFN8Tv6rMPln9DLjJoqVJ0BsdT9zuohi5SVQrgBrMKs1S6DSj3CHFQDKdEiAQzCruyjWIQFugxmN0ncfxTrsAcYF2Lgg2QUzuc/6/1UUK18BTufAbzOOwSweL8KigRab4HEjmDHOhT9Eg7qQZ3PI+BTbBdgxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4JyU9wl+sq7r059tfhPPYl2WPkPc4pecJv+/GdcZbzIug3M0WuB+zvgaTRKhSwKMHsHfQrf4WYxG2e9j6xYflcoT4PT1Hy9kF8xkjPlomP0QhTp0ir8Kk39GY9W/iWIdEuA6mNVFFOtQAq3BrMZGuPQj3GEFgDIdEuAQzOouinVIgNtgRqP0/RzFOuwBXuTjR2ynAszjV9b//0Wx8hXgdA78LrZzYRvi8zfG+FdsF2HlWv3fTa4GV/n4mPF/cI4OsZW8++oLMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4O/9Bnf2i8lets0DAAAAAElFTkSuQmCC)';
+const style = {
+	maskSize: 'contain',
+	WebkitMaskSize: 'contain',
+	maskImage: url,
+	WebkitMaskImage: url
+};
+
+export default function TextAlignJustifiedIcon(props) {
+	return <svg width={24} height={24} viewBox="0 0 24 24" style={style} {...props}>
+		<rect x={0} y={0} width={24} height={24} fill="currentColor" stroke="none" />
+	</svg>
+};

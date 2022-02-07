@@ -1,0 +1,15 @@
+import * as React from "react";
+
+const url = 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAFiVAABYlQHZbTfTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATHSURBVHgB7d3hcRtVEAfwFRWEDgwVAAUwQCNJaACowK6AmTRAUgF0gEMDDhXEqSChgiynSIzzwUlupSed0P5+M2/yIZ6x527/uqe7vfciAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACANjLzwTQup3Gdd15M42HAOZuK/GIat/lh6/+7CDhHnyj+90PwIOCcTEX9KOe7Cjgn23n+XNcBA61iYeuqrvz8ahIwyGcBjQkArQkArQkArQkArQkArQkArQkArQkArQkArQkArQkArQkArQkArQkArQkArQkArQkArQkArQkArQkArQkArQkArQkArQkArQkArQlAA+vVJ/P+/Rdu0v4Ly8qioGRb/F/kx5egf5n2X1hGFgUl0yFb5bz9F4RgCVkUzJabT//HhcO7DsFXwfFkUTBbbj79K/svrL0WgiPKomC2bQB28TabfDl2F4j7rDcheTqF4Oc4cwJw/p7HbtYh+HUKwWWcMQE4b+sp41+xu3UILs89BIvKomC23NwF+jzn3Qb91HcCITiELApKct6DsLl+C8bKoqBscAh+TxuWj5NFwU7ybjpUfS5wnxshGCSLgp29F4I/cn9aJ0bIomBvuXlA9iz3JwT7yqJgiNxcDa5yf0KwjywKhhkcAv1Du8iiYKiBIdBEt4ssCobbhuCX3F+bJrphsig4iKy/O/CxEJx9E90wWRQczDYEX0/jTe5H68RcWRQcVN6F4Db3IwRzZFFwcDmudUIIPiWLgqNITXTHkUXB0aQmusPLouCo8syb6FaxsGpRryZxANsT89M0vtsODuN2Gj9Mp/FVnAAB2PwNF9M/19O4CI7hZEIgAJu/YX1CLoJjWh/zb6bT+U8sqP1L8VPxPwrFv4QvprH4E2OrQmzm/Szj21hY+ylQ9fczVE6nc9EPYVcAWhOA3VdOY39/x8IEYL+V09jdeur5JBbmO8DmAdiLcCfo2G6nU/llLKz9FWB7H/r7abwKjuXdg7A4AaZA8S4Er6axvi/9OE5gXnrm1lfbk2mFWFwWBUeVVpQ7rCwKjibv2qFHFP9TxX+PLAqOIse+C/A0uF8WBQc3uPivgg/LouCgctxL8Yp/jiwKDibHLYui+OfKouBgpsP7KMesCfQomCeLgoOYDu3D3N9rxV+URcFw02G9zP1ZHHcXWRQMNaj4LY++qywKhhlY/BfBbrIoGCI3T2YV/9KyKNhZbm5zPhhU/DeKf4AsCnaSmtpOUxYFZamp7XRlUVCWmtpOVxYFJbn59L/N/V0F42VRUJKb9gbFf6qyKCjJ/ef9V8HhZFFQkrtr0dTmpXju82YaP65Wq2fBYWVRUDIdsuusadXU5gpw/ior3/23cYWlYY4li4KS3LQ+vJxxaPX1LCGLgrJ1YW8L/O0HDuut4l9IFgU7y80zgfdvi15P4yobtzbYI4zWfAmmNQGgNQGgNQGgNQGgNQGgNQGgNQGgNQGgNQGgNQGgNQGgNQGgNQGgNQGgNQGgNQGgNQGgNQGgNQGgNQGgNQGgNQGgNQGgNQGgNQGgtVMIwPPCz74IGOgUAlBZv/5JwDnJwvr1Aedoxvr1Nm/g/G3Xr7/ZBmE9/uy+fj0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMD/3b93AQC0w65qbgAAAABJRU5ErkJggg==)';
+const style = {
+	maskSize: 'contain',
+	WebkitMaskSize: 'contain',
+	maskImage: url,
+	WebkitMaskImage: url
+};
+
+export default function AlignArrowRightIcon(props) {
+	return <svg width={24} height={24} viewBox="0 0 24 24" style={style} {...props}>
+		<rect x={0} y={0} width={24} height={24} fill="currentColor" stroke="none" />
+	</svg>
+};

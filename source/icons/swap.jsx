@@ -1,0 +1,15 @@
+import * as React from "react";
+
+const url = 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAFiVAABYlQHZbTfTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANKSURBVHgB7d3bURRBGIbhf40AM0BDMABPiYgRaAZqBhqCiQAmgEbgEoIROHa74+EGxQVreud7nqouuOCCgnmH2R72nyoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABqmqa+jtp61dbZ9MtFW88K1mo++O+1tZ2u9rmt44K1aQf25i8HvwhYp/ns/3y6PhGwHvPZ/+P0b0TAOswB7EMEHL4bBCCCa7pTjO689nOvrVMR/JkAxja19aH2JwIO17TbBbo7XW8b1OUQ6zNd70aYCFgvERBPBMQTAfFEQDwREE8ExBMB8URAPBEQTwTEEwHxREA8ERBPBMQTAfFEQDwREE8ExBMB8URAPBEQTwTEEwHxREA8ERBPBMQTAfFEQDwREE8ExBMB8URAvDVHsKlBtB/MUfvwoq3H82Kdtm093Ww2lzWAIQKYzwpnbR0XCYaJYJQA+g/kuEjSf+cPWgRfakGLPya1Hfwn5eBP1B/h+rIWNsJzgl8UqR7Wwha/BOpbA0WqqV0CLXoS9qR4oo0QwHmR6lMtbIQAPhSJ+qXvu1rYCK8B+g2wj2UnKM22Xf/fr4Ut/hdg3gd+0tZlkeL7jbAawBAvgvsdwbb6vvDzGuC6kP/mvK03tbsBdlkAAAAAAAAAAAAAAOxrpNGIPz4d5ntao81mYwrHb0aZDNc/3K3djKBHZTboWvW3vr5rEb6vQYwSQH832Gl5X3AKs0F/mM/+ZoPmMRt0dlIO/kRmg87MBs1lNqjZoNHMBoUlmQ3KkswGLbNBU5kN2s2zQS9qtytADrNBu3kfuM+J3BYphpkNOtL/Ah3X7m7wbfwlsLN0tSV/5+e1u+R9u/QNsCH1COaHKd/Edto91Lng4IiAeCIgngiIJwLiiYB4IiCeCIgnAuKJgHgiIJ4IiCcC4omAeCIgngiIJwLiiYB4IiCeCIgnAuKJgHgiIJ4IiCcC4omAeCIgngiIJwLiiYB4IiCeCIgnAuKJgHi3GMFRwSG6pQheFxyqW4jgrOCQ3TSCgkN3kwgK1mDPCC4K1mKPCJ4VrMk/RPC5YI1+i+DrVQd//5qCNWsH+Um/zp9D6Ou0rdeTG2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/fQOnlpUm/gcsQQAAAABJRU5ErkJggg==)';
+const style = {
+	maskSize: 'contain',
+	WebkitMaskSize: 'contain',
+	maskImage: url,
+	WebkitMaskImage: url
+};
+
+export default function SwapIcon(props) {
+	return <svg width={24} height={24} viewBox="0 0 24 24" style={style} {...props}>
+		<rect x={0} y={0} width={24} height={24} fill="currentColor" stroke="none" />
+	</svg>
+};

@@ -1,0 +1,15 @@
+import * as React from "react";
+
+const url = 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAFiVAABYlQHZbTfTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATrSURBVHgB7d3xkdNGFAfgp0wKgA6OVJCkgCRzlUADhBKuhFBCGgmQArhUwLmDUAGb3bsNc8CBvbZk7drfN/PG/9jSzt3vSfLKkiIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIClTcHwUkrl5VGu33P9VqtH17leTtP0Z3RCAwyuhv9Jrr9yXcQYbnJd5kbYxMo0wOByA5T/4bsYJ/z/K03wc26C97Gi74Jh1a3/0xgv/EXZa72IlWmAsZWt//MY1y+xModAA6uHPx9iXCkfAq26EbYH4KxpgPG9DvamAcZWvgW/CfbmO8DA6izQ41xvY8yZIN8B2F8OT3n5N9dlrk3QTAMMrjRBrnJSqcyrP8v1T7Azh0BsteDPLRwC0bdBf2u0Mw3AV516+AsNwIPOIfyFBuAL5xL+QgPwiXMKf6EB+Ojcwl9oAG6dY/gLDcCc4d/EYDTAmZsx/LfX+QaMooQ/15NcN+kw73JdlAt0UpuRL+ZhZHOHvy5TA9C/JcJfl6sB6NtS4a/L1gD0a8nw1+VrAPq0dPjrOjQA/TlG+Ot6NAB9OVb467o0AP04Zvjr+jQAfTh2+Os6NQDrWyP8db0agHWtFf66bg3AetYMf12/BmAda4e/jkEDcHw9hL+OQwNwXL2Ev45FA3A8PYW/jkcDcBy9hb+OSQOwvB7DX8elAVhWr+GvY9MALKfn8NfxaQCW0Xv46xhLA7xqGMvbWJnbogwgzXzrkmmaNrGMlmeWlfe+DPiWEbb8n4318Y5jfRewTbo7rNglUKuG/954d2nYo42HgdUwPUuDhP+BsT/NdX1vLK9yXeV6FLBNutv6X6f92dIyrtQ+rSj8nI4DGkD4GV9qn1cX/kbOA/StZV69WHqeH44nNc6r2/JzcpJ5dTCvDgAAAAAAAAAAAADAJ6ZgL+nudoXF53/DNE3+rKNwTfAeavgf57qKu/t1fqhVbvZaLlqZ7jUInI4dL1G8qe8JOBmp7Ua1Ny5V5GSk/e7SfBUwurT/LcpfBYwsHXh//oBRpRkeThF07fvoROpsXj3N81ii66BrXZwHSJ3Nq88U/sIzsNgudTSvnmZ8JlfANjVwNzsEqrxn0Xn1NNAD6TgR6e5+l7u6ioUIP6tIbc/AWmReXfhZTWoUMxN+VpUaxYyEn9WlRjET4acLqVHMQPjpRmoUBxJ+upIaxQGEn+6kRrEn4adLqVHsQfjpVmoUjYSfrqVGjcsWfvqWGjUsV/jpX2q04zKFnzGkRjssT/gZR2q0ZVnCz1hSo28sR/gZT2r0lWUIP2NKjR74vPAzrtTos88KP2NLje59TvgZX2pUPyP8nIbUTvg5Hamd8DOb1R9mVdIYbTZx2O0Kb3JdTtO0Cc7eiA1wCOHnE+f0kDzh5wvn0gDCz4POoQGEn6869QYQfr7plBtA+NnqVBtA+NnJKU6DbnJd1tclrPLMMpZxinuAi1zl8UQfFqhVnlnGcs7tRNhcNnG3l7mxNxibBtjfJtdPuQHeB8M6pzPBc7vI9SIYmgY4zK/B0BwCHWjyJWBo9gCctR4a4HWM6zoYWg8N8CbG9TIYWg/fAR7F3QmmJzGWcg7gh2Boq+8B6jz67UmlXKN8Ib79rVEwvK5mMPLe4Gl+eZ7rx+jT61x/5/rDCTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIDd/AfU5YlnpaaNYAAAAABJRU5ErkJggg==)';
+const style = {
+	maskSize: 'contain',
+	WebkitMaskSize: 'contain',
+	maskImage: url,
+	WebkitMaskImage: url
+};
+
+export default function Maximize2Icon(props) {
+	return <svg width={24} height={24} viewBox="0 0 24 24" style={style} {...props}>
+		<rect x={0} y={0} width={24} height={24} fill="currentColor" stroke="none" />
+	</svg>
+};
