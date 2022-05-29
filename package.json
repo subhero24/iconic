@@ -2,16 +2,16 @@
 	"name": "iconic-icons",
 	"version": "0.0.1",
 	"description": "Iconic icons as react components",
-	"main": "build/index.cjs.js",
-	"module": "build/index.esm.js",
+	"type": "module",
+	"main": "build/index.js",
 	"source": "source/index.js",
 	"types": "build/index.d.ts",
 	"scripts": {
 		"lint": "eslint source --max-warnings 0",
-		"build_main": "esbuild source/index.js --outfile=build/index.cjs.js --bundle --format=cjs --minify --sourcemap --external:react",
-		"build_module": "esbuild source/index.js --outfile=build/index.esm.js --bundle --format=esm --minify --sourcemap --external:react",
-		"build": "npm run build_main && npm run build_module && cp source/index.d.ts build/index.d.ts",
-		"prepare": "npm run build"
+		"build": "esbuild source/index.js --outfile=build/index.js --bundle --format=esm --minify --sourcemap --external:react",
+		"download": "node scripts/download.js",
+		"generate": "node scripts/generate.js",
+		"prepare": "npm run build && cp source/index.d.ts build/index.d.ts"
 	},
 	"keywords": [],
 	"author": "Bruno Van Damme",

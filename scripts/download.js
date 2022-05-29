@@ -15,18 +15,18 @@ const downloadFilePath = Path.resolve(downloadDir, downloadFilename);
 const downloadIconsDir = Path.resolve(downloadDir, "Iconic", "svg");
 
 const iconsDir = Path.resolve(currentDir, "icons");
-const proIconsDir = Path.resolve(iconsDir, "pro");
-const freeIconsDir = Path.resolve(iconsDir, "free");
+const iconsProDir = Path.resolve(iconsDir, "pro");
+const iconsFreeDir = Path.resolve(iconsDir, "free");
 
 const imageRegex = /<img src="(https:\/\/iconic\.app\/icons\/iconic\/png\/white\/(.*))">/g;
 
 await Filesystem.ensureDir(downloadDir);
-await Filesystem.ensureDir(proIconsDir);
+await Filesystem.ensureDir(iconsProDir);
 
 // Download free icons
 await download(downloadUrl, downloadFilePath);
 await Zipper.unzip(downloadFilePath, downloadDir);
-await Filesystem.move(downloadIconsDir, freeIconsDir);
+await Filesystem.move(downloadIconsDir, iconsFreeDir);
 await Filesystem.remove(downloadDir);
 
 // Download pro icon images
@@ -39,13 +39,13 @@ let responseText = await response.text();
 let responseMatches = responseText.matchAll(imageRegex);
 for (let match of responseMatches) {
 	let [url, filename] = match.slice(1);
-	let imageFilePath = Path.resolve(proIconsDir, filename);
+	let imageFilePath = Path.resolve(iconsProDir, filename);
 	await download(url, imageFilePath);
 }
 
 function download(url, path) {
 	return new Promise((resolve, reject) => {
-		fetch(url).then((response) => {
+		fetch(url).then(response => {
 			let stream = Filesystem.createWriteStream(path);
 			stream.on("finish", resolve);
 			stream.on("error", reject);
