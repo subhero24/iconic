@@ -31,6 +31,8 @@ await download(downloadUrl, downloadFilePath);
 await Zipper.unzip(downloadFilePath, downloadDir);
 await Filesystem.move(downloadIconsDir, iconsFreeDir);
 
+await Filesystem.remove(downloadDir);
+
 // Download pro icon images
 let body =
 	"action=load-contents&setup%5Btrigger%5D=auto&setup%5Bobject_type%5D=icon&setup%5Btemplate_part_id%5D=icon-grid-icon&setup%5Bnone_part_id%5D=&setup%5Bmore_part_id%5D=icon-grid-load-more&setup%5Bsource%5D=category&setup%5Bquery%5D=pro&setup%5Bcount%5D=2000&setup%5Bdelay%5D=0&setup%5Boffset%5D=0";
