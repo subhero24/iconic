@@ -20,6 +20,9 @@ const iconsFreeDir = Path.resolve(iconsDir, "free");
 
 const imageRegex = /<img src="(https:\/\/iconic\.app\/icons\/iconic\/png\/white\/(.*))">/g;
 
+await Filesystem.remove(iconsDir);
+await Filesystem.remove(downloadDir);
+
 await Filesystem.ensureDir(downloadDir);
 await Filesystem.ensureDir(iconsProDir);
 
@@ -27,11 +30,10 @@ await Filesystem.ensureDir(iconsProDir);
 await download(downloadUrl, downloadFilePath);
 await Zipper.unzip(downloadFilePath, downloadDir);
 await Filesystem.move(downloadIconsDir, iconsFreeDir);
-await Filesystem.remove(downloadDir);
 
 // Download pro icon images
 let body =
-	"action=load-contents&setup%5Btrigger%5D=auto&setup%5Bobject_type%5D=icon&setup%5Btemplate_part_id%5D=icon-grid-icon&setup%5Bnone_part_id%5D=&setup%5Bmore_part_id%5D=icon-grid-load-more&setup%5Bsource%5D=category&setup%5Bquery%5D=pro&setup%5Bcount%5D=500&setup%5Bdelay%5D=0&setup%5Boffset%5D=0";
+	"action=load-contents&setup%5Btrigger%5D=auto&setup%5Bobject_type%5D=icon&setup%5Btemplate_part_id%5D=icon-grid-icon&setup%5Bnone_part_id%5D=&setup%5Bmore_part_id%5D=icon-grid-load-more&setup%5Bsource%5D=category&setup%5Bquery%5D=pro&setup%5Bcount%5D=2000&setup%5Bdelay%5D=0&setup%5Boffset%5D=0";
 let method = "POST";
 let headers = { "content-type": "application/x-www-form-urlencoded; charset=UTF-8" };
 let response = await fetch("https://iconic.app/c/availability/pro/", { body, method, headers });
