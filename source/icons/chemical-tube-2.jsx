@@ -1,0 +1,15 @@
+import * as React from "react";
+
+const url = 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAFiVAABYlQHZbTfTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQQSURBVHgB7d39bdtGGMDhl53A2UDJAv0YoLWzQIMuULcLuOgE7gRFJgi6QbtAky7gpAtU6gKNJ/D1aNFI8o/tk6gP8n0e4GAEiGhBuR954klIBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsGtdzEQp5aT+uKjjdBiM720dL7uu+y1mYhYB1Mm/qD9e17EI9mFZx/Mawiombi4B9P8gi2Cf+tf8qxrBdUzYZzFxdfKfh8l/CE/r+CkmbvIBxHrdz2F8HRM3+SVQvQKU4FBKXQJN+iQ6hysAbGwOAbwJDuVdTNwcAvgrOIR+6fkyJm4O7wH6DbB+g2YR7NOyrv+fxcRN/gow3Ic+q2MV7MvtRljMwCzeBPc7knX096V/iBmsS4/Ymzp+ifUG2CpmYDafBdqV1tusdWLs7DWtT6U/9k3LQ6Z+m3LXvDikJgBSEwCpCYDUBEBqAiA1AZCaAEhNAKQmAFITAKkJgNQEQGoCIDUBkJoASE0ApCYAUhMAqQmA1ARAagIgNQGQmgBITQCkJgBSEwCpCYDUBEBqAiA1AZCaAEhNAKQmAFITAKkJgNQEQGoCIDUBkJoASE0ApCYAUhMAqQmA1ARAagIgNQGQmgBITQCkJoAJ6bquRJsuuJcASE0ApCYAUhMAqQmA1ARAagIgNQGQmgBITQCkJgBSEwCpCYDUBEBqAiA1AZCaAEhNAKQmAFITAKkJgNQEQGoCIDUBkJoASE0ApCYAUhMAqQmA1ARAagIgNQGQmgBITQCkJgBSEwCpCYDUBEBqAiA1AZCaAEhNACMrpfU/cz+OY2clgIddR5tF7M5JMCoBPOyYAvgi2qyCewngYe+izWnszotoswruJYCH/RttLnaxVh+O+W20+Tu4lwAe1noF6NfpZ2NGMBzrPNqXV28DtlEn30lpt+wfFyMZnsOytFsEbKtOpNel3a9lhKtAf4zhWK2uAsZQJ9Nl2Uz/uG6TEIaJ35XNf/f3AWMo6yXI+7KZ/uz9pCWCYfI/KZud+e8sAsZSNj8T95Z1nJf1Gf32ivBxEHd/Lh/O+mdlszX/nVfBo3TBo5T1m9plbLcbu6rjj2H0d5fuNtkWw/imjovYfsf3add1q4Axle2uAvtyGTyaK0Cjsr678mUcp2U98z8LHs1GWLvv6ngfx6d/Ts+DJgJoNKytf47j86N1P3tTjuv9wGXAvpV1BDflcG5Mfg6qTsAXdfxX9q//necBh1Yn4qKOf8r+XBU7vRybsvslUX/Wvww4VmV9NXg1hDBWDLcTv4z4EWvYqSGE/vM/VxvEcPf3/zTxd8tO8B6U9Xr9tI7Ph7GIT7/ddT2M/vNB/Vcw+68y/l7v67d+IR8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAODo/A+aFr9rPhcqIwAAAABJRU5ErkJggg==)';
+const style = {
+	maskSize: 'contain',
+	WebkitMaskSize: 'contain',
+	maskImage: url,
+	WebkitMaskImage: url
+};
+
+export default function ChemicalTube2Icon(props) {
+	return <svg width={24} height={24} viewBox="0 0 24 24" style={style} {...props}>
+		<rect x={0} y={0} width={24} height={24} fill="currentColor" stroke="none" />
+	</svg>
+};

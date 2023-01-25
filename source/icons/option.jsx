@@ -1,0 +1,15 @@
+import * as React from "react";
+
+const url = 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAFiVAABYlQHZbTfTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALrSURBVHgB7d3tVRNREAbgiRVYQuxAKxBKsAK1ArECsAKhArECSyBWgB2wHWgH410T//lxyCbLHfZ5zrmHv8lwZ7O5L+xEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf5WZT9s6b+sm+3Pb1pt4QNlHfR68Dve1igJaUdftx01b6+jb0NbparUaYkYd1meIB6jDPqo0wF30v/l/G9p60X75P2ImndZniJnrsI8n0bndR+o66li3ddNe99OYQcf1Wbd1Fp3rvgGad1HP87Y+xjx6rs/L6Fz3t0DjN6uo67LdAryPI+q9Pu39d73HKnwCVHbW9ud50K0KDbCJ2i5aE7yO49lEv75F5yo0wNeo77o1wUkcR8/1uYrOVfgOMJ6m3Eatk6A/GY8Dx7Pxg14VO67P0N7rs+hc958Au3Pk09ieK1c2btQvu9DqYDqtzxDb19S9El+Cx0RxdzV5GwXuK/9hHUfICDqqz6atD7ENwIbgcRrv53Oa27mCMjiKMYHNaT4FVNY28UVOM1daDMfRNvFlTiMoo7a2ia9zmmMGZXBcuf1nlNuc5iSgql0T3OX+vrf1PKCqtoHXE5vgLg8clMGsxqv47mo+pQlkBNSVgjKWLgVlLF0Kyli6FJSxdCkoY8lSUMbSpaCMpUtBGUuXgjKWLgVlLF0Kyli6FJSxdCkoY+lSUMaSpaDswZSYELME+TgeATk+lOtqtVpdRxEaoCNZZxba/wxhRhj7yO2fO4xNUP2cfwgzwriv3dOjX0V96zAjjH20JtjE9kG31ZkRxv7a7dBF+1H6nL/3GWEaoHOtCS6j5qTMXwzJY5K2f8b76M9RkxlhHMTYBBUHg5gRxmEUDMrMCONwis1KG8KMMA6twKy0TZgRBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs/sJX0ccI5EEPoYAAAAASUVORK5CYII=)';
+const style = {
+	maskSize: 'contain',
+	WebkitMaskSize: 'contain',
+	maskImage: url,
+	WebkitMaskImage: url
+};
+
+export default function OptionIcon(props) {
+	return <svg width={24} height={24} viewBox="0 0 24 24" style={style} {...props}>
+		<rect x={0} y={0} width={24} height={24} fill="currentColor" stroke="none" />
+	</svg>
+};

@@ -1,0 +1,15 @@
+import * as React from "react";
+
+const url = 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAFiVAABYlQHZbTfTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAT+SURBVHgB7d3tdRNHFAbgayqgBKUDUkGghFSAUwF0YKWChApCKrFTgelA7iB0cLODlsRJAEvamf18nnPm8AOzd33Oe7UrsXMVAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwCJl5vNu3XTrNv9x363rgDXrQr7r1iG/rvzdLmBtTgj/4yZ4HrAWZ4T/s33AGlwQ/uI2YOkuDP8nAUs2JPwagEUbGv45NMCzgAvk8WPMcg+/iwXTAJxtLeEvNABnWVP4Cw3AydYW/kIDcJI1hr/QADxpreEvNADftObwFxqAr1p7+AsNwBdtIfyFBuB/thL+QgPwL1sKf6EB+NvWwl9oAD6pFP6HWBgNQM3wvwpYkhqPNOejTe55poCp1A5/f0wNwPy1CH9/XA3AvLUKf39sDcB8tQx/f3wNwDy1Dn9fQwMwP2OEv6+jAZiXEcO/yzMFtDRy+A95poBWcrzwv+jWn3mBgBaWEH4NQBMjhv/lkPB37gNqGjH8r3O464BaclnhPwTUkuOF/00Od3iqDpwsxwv/TQ53SOGnlhR+tiqXFf4P6UvxqCWFn63KZYX/NoWfWnK88P+Sw70PqCXHC/9vOdz7gFpyWeH/NaCWHGcn1/M83q8PtQ+oJccL/4ccbh9QSwo/W5XjhL9GjWIfUEsKP1uVywr/24Baclnhvw6oJYWfrcrlhL/s/30ZUEuOE/5Bkxt65d+/CKglhZ+tynr347tv1HiZw8N/SLu4qCnrhT+/UeN1DndI4aemrBj+4is1XudwhxR+asrK4S++UMPYEuYnG4S/+E+NmxzukMJPTdko/MWjGjc53CGFn5qyYfiLvsZNDmdyA3Vl4/D3bnK4zYb/Kmgij7cSt93axbzddevHq6urj7FBz4LqFhT+37vgv9pq+AtXgMoWFv7r2DhXgIoWFP53wk9VWe/Bttb2ATVlxac6s619QE1Z+ZHmbGcfUFM2eJ4/29gH1JSNNrNkffuAmrLhTq6sy9gS6srG2xiznuuAmnKcPbw1XAfUlOPN5x/C2BLqy5HC39caEn6TG6hrzPD39YSfeRg7/H3NpseHk0wR/r7uuc46PjxpqvD3tc8SUNOU4e/rawCmMXX4+3PQAIxvDuHvz0MDMK65hL8/Fw3AeOYU/v58NADjmFv4+3PSALQ3x/D356UBaGuu4e/PTQPQzpzD35+fBqCNuYe/P0cNMKLNTIbL5QytOstVJ7jYJibDrTX8DLeJV49y2xIrDb8rwDCrvwLkcX/sLuALVv/q0TXAfffHandLuQIMs4UGWPUnJRpgGOPR2bQtNMBdrNeHYJAtNMAfsV7vgkG28B6gfPtheSO8i3V56G7/vwsGWf0VoP8CuFfdeoj1eIjj78RAm3gT3DXB51fLn2LZ98133fq5W9+X3ykAAAAAAAAAAACYl/LYcrduunWbl7vPC78kWv1p629a1pnY9tghz/tmRvUnrD+lWWyIyTZzex7i+Njwx6d+UP1p609p8v0A2W5uz65bb5/6IfWnrT+1OWyIeRPt/HDCz6g/bf1JTX4LVG4Yo6Gn5uaoP239qZkLxKbNoQHuop1T9v/eRTvqz9wcGqDl3J5T5uaoP239Sc3hPUCruT0nzc1Rf9r6U5v8CtBobs9DnDg3R/1p6/NI+Uw6j/+dfqnbbu37VzX1F1YfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYp78A7gtcjryXhPMAAAAASUVORK5CYII=)';
+const style = {
+	maskSize: 'contain',
+	WebkitMaskSize: 'contain',
+	maskImage: url,
+	WebkitMaskImage: url
+};
+
+export default function SliceIcon(props) {
+	return <svg width={24} height={24} viewBox="0 0 24 24" style={style} {...props}>
+		<rect x={0} y={0} width={24} height={24} fill="currentColor" stroke="none" />
+	</svg>
+};

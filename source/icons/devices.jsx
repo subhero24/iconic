@@ -1,0 +1,15 @@
+import * as React from "react";
+
+const url = 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAFiVAABYlQHZbTfTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAS2SURBVHgB7dzhbdw2GAbg74oMkBEuEySZIPEG7gR1Jgg6QZoJik5Qd4J6g9gT2JnA2iDZgKVgpTAMxDldfCdS3/MAhP4oiEXxJSVSxwgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOChTRCllLf1cFrLm1q2tTwP9vG1lptaPtdysdlsLqNxqQNQG/5ZPXyIu0bP0xtq+ViDcB6NShmA2vC39XBRy8vgGIZaTmoQhmjML5FMbfy/1cN1aPzHtK3lutb9aTQm1Qgw3YB/gyWd1ZHgn2hEmgBMjz1jz+8Fd1nji/LrVh6HMgXgNrzstuKmBuB1NCDFO8A027MNWvFquieLSzEC6P2bNNRR4EUsbPUjwLTItQ1as53uzaIyPAI1N/XG/xa/NxkCYL6/XW+Cw6rD7Jcyz3ktpkpnGqeZp7qb40ssbPUvwWMtxzwvWlyy78HUccxq1LWuF22DAvDA0jekd73Vd7pvgeA+ASA1ASA1ASC1DAG4nHHuTZBKhgBczTj3r4A1Geemx4/hdliUuQ1+WpkpFrb6EaBOM48/wDiJu9+lfs8wnQPrVTucs1qu73VAn2r5o/j04cmUmWJhVj15UnMbtZVgWJAAkJoAkJoAkJoAkJoAkJoAkNqz6EBpZ//+7va/p2PTyu1taddtaWSHs1aUmWJhTa4El/727x+i0f3vj21uo7YS/EDpc//+bTS6/z2Pa2oEKOvYv7+p/e+PrbcRoJkAlPXs39/U/vfHJgB7KuvawbmZ/e+PzTvAHsr69u9vZv97HtfECLCy3v+bJva/PzYjwExlvfv3N7H/PY9r4RFozVOHpkUb10IA1rx/v/3veVzpZP/+0un+98dWZoqFLf4SvEclLLZ/f+lw//tjm3s/068D9FZhvf29x9Zb/fg9AKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKkJAKl1F4BSyvNYSP2/t8F39Vg/LQTga8zz5xIVPQXvQ8wz99q61Wv9bGJhteKu6+FVrNPlZrM52eXEqQG9r+XtVDLYuX4O5Vks7yrWG4DPu5w0jWifatlGLjvVzyG18Ah0Eeu167VlbPyjxe/94o9Ao9oD3sb6GsBQh/cXPzqpXvtZPfwd+exUP4fWyizQx1ifXa/pfeTUxD1vYgQYrexleOferV53iXya6P1HLa0D/BrrmDYcr2HRmY3GNVU/zQSg9ghDPfwe/Xs3XcuuLiOXufVzUE2tBNeKOY9+R4Lxbx5v7tyZjavIYd/6Oahm3gHu63BefJzPPt2nZ5sWwMb3n22s1971c2hNfgs0VtT0kvSuliHaNcRdr/Zq35tb/923Z+Ih1meIn6yfQ2tyBHio9pJv6+G0lpdxN1O01AdxY2Md4u6x5aLe1Mt4QtOawDgt2uts2EHrBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6NN/iRi7CCUJ+FIAAAAASUVORK5CYII=)';
+const style = {
+	maskSize: 'contain',
+	WebkitMaskSize: 'contain',
+	maskImage: url,
+	WebkitMaskImage: url
+};
+
+export default function DevicesIcon(props) {
+	return <svg width={24} height={24} viewBox="0 0 24 24" style={style} {...props}>
+		<rect x={0} y={0} width={24} height={24} fill="currentColor" stroke="none" />
+	</svg>
+};

@@ -22,6 +22,16 @@ await Filesystem.remove(typesFilePath);
 
 await Filesystem.ensureDir(targetIconsDir);
 
+const map = {
+	"2m-distance.png": "distance-2m.png",
+	"3d-rotate.png": "rotate-3d.png",
+	"4g.png": "four-g.png",
+	"5g.png": "five-g.png",
+	"16-plus.png": "plus-16.png",
+	"18-plus.png": "plus-18.png",
+	"90-degrees.png": "degrees-90.png",
+};
+
 // Transform all free icons to react components
 let freeIconFilenames = await Filesystem.readdir(sourceIconsFreeDir);
 for (let filename of freeIconFilenames) {
@@ -45,7 +55,8 @@ for (let filename of freeIconFilenames) {
 let proIconFilenames = await Filesystem.readdir(sourceIconsProDir);
 for (let filename of proIconFilenames) {
 	let filePath = Path.resolve(sourceIconsProDir, filename);
-	if (filename === "3d-rotate.png") filename = "rotate-3d.png";
+
+	filename = map[filename] ?? filename;
 
 	let content = await Filesystem.readFile(filePath, "binary");
 	let contentBase64 = Buffer.from(content, "binary").toString("base64");

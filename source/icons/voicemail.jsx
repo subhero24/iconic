@@ -1,0 +1,15 @@
+import * as React from "react";
+
+const url = 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAFiVAABYlQHZbTfTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARYSURBVHgB7d3hcds2FADg506QDapMUGeCuhPEnSDOBG0miDNBkwmSEdIJ4k4QZwKrEyQboMCRunNzvWtAidGD/H137/SHonSPBECCABgBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB5ncUJKKU8qh+XNc5r/Dh/PppjZzvHpxq3NW7Ozs62gfyNqB20Gi9rfCjLfaxxVWMTD4z8DeregftcDuvtQziQ8jewlQ7c117GiZK/QdWkbmrclu/nrpxQbSZ/A6uJfFbWr7X+S/vNyxic/A2sTE32sQ3bpBf5G1fJcfB2hjuIRf7GVRN2WfJ5FoMo8vfN0j0IK9PN08f490OYDL7UeJL94Y/89clYAO7qxyZyuq0H8EkkJn99fohEynStuIm8zut/vI6k5K9fmhZgbrrvYj+tmX1T46bGdtfclmmsSxvf0rrlnsZ+J0n7jcd1318iEfkbXE3yu7LcXY2Ljt+6mr+z1HUkU+RvXGV6UrnU6zLVUL2/+Wj+7hKfl/zmWuRvcGWqUZa4jj21fZRlriMJ+RtcmYbV9nodB1KW1WQfIgn5G1hZ1nzflQM2oWVqzu9Kv6M34/K3nwzdoBfR79UhexHmfT2PfhkGe11EP/mbZSgA553bt+65d3FgdZ83MXXR9ej972uQvz1kKAA/RZ8/Yz1vOrffxPHJ3x4yFIBN9Hkf67mJPr0n3xo20Uf+7hmxANzGerbRJ0Nf9ib6yN89Rx8K0boCerav15qr/uds/+f/yN9+Ug2Gg+8tQwHo6jkoK062ztAvvYD87WG4AhDr9hx0dynG8cnfHjIUgE+d21/EenofzGzj+ORvDxkKwDb6/Bbredq5fe/Jt4Zt9JG/ezIUgN5uuTbu5CIOrO7zKnJ1KX4r+RvZPJBq1MFcmziyIn/jK8tWKP4jDqTtq/T7GEnI3+DK8kkVey+4VJYvIHUVScjf4MrUhC5dv7LVPkun9C2puXY2kYT8nYCyvBZr7kpHjVK3vSj7Tep+G8nI3zKZlkVptVBb1mOfm7NtTMN924jH292kjzLVNi1+rvF77D8I63G2Fc7kb5lUK8OVaaK0hVRPW5uNdh1JZFwasfUOZJhpxeG12WiPI5GMo0F/jf7xLeTXjukvkUy6AjBfG74ITs3zjCtrp5wPME/afhWcinbdv+ZUzMVSvyjbTfFJSHXT+7X0b4ov04vWWr/xiJNVHrJ2zf9ijSVYDil9AWjmfui2lN4mGEEb5nyZ/W06zRBzglsi5+4z9wW5tVq/XfKcj3DyN0O0APfNrcF1jWFeWvcA7F6s8Xq0F18MVwB25oJwEdMMJw/OjuOmxl8x4Im/M2wBuO9eYWgFoa02tgn3C4f0ZY42g+vv+fP9qCc9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACM4h8xstorRPtv2QAAAABJRU5ErkJggg==)';
+const style = {
+	maskSize: 'contain',
+	WebkitMaskSize: 'contain',
+	maskImage: url,
+	WebkitMaskImage: url
+};
+
+export default function VoicemailIcon(props) {
+	return <svg width={24} height={24} viewBox="0 0 24 24" style={style} {...props}>
+		<rect x={0} y={0} width={24} height={24} fill="currentColor" stroke="none" />
+	</svg>
+};
